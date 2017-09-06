@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+﻿
 #include "lazysingleton.h"
 #include "hungrysingleton.h"
 
@@ -10,10 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-  QCoreApplication a(argc, argv);
 
   HungrySingleton* hungry = HungrySingleton::Instance();
   LazySingleton* lazy = LazySingleton::Instance();
 
-  return a.exec();
 }
